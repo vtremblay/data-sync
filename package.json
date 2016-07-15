@@ -1,0 +1,24 @@
+{
+  "name": "data-sync",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtremblay/data-sync.git"
+  },
+  "author": "Vincent Tremblay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtremblay/data-sync/issues"
+  },
+  "homepage": "https://github.com/vtremblay/data-sync#readme",
+  "dependencies": {
+    "cron": "^1.1.0",
+    "oracledb": "^1.10.0",
+    "request": "^2.73.0"
+  }
+}

@@ -6,9 +6,7 @@ class UdacService {
 
   getAllUdacs (registry, callback) {
     oracledb.getConnection({
-        user: "schema_ypg",
-        password: "schema_ypg",
-        connectString: "mtlacqora01.itops.ad.ypg.com/APPUAT.YPG.com"
+
       },
       (err, connection) => {
         if (err) {

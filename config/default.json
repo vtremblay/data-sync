@@ -1,0 +1,12 @@
+{
+  "product" : {
+    "dbConfig": {
+      "user": "schema_ypg",
+      "password": "schema_ypg",
+      "connectString": "mtlacqora01.itops.ad.ypg.com/APPUAT.YPG.com"
+    },
+    "api": {
+      "endpoint": "http://localhost:4055/products"
+    }
+  }
+}

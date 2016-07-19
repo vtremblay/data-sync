@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vtremblay/data-sync#readme",
   "dependencies": {
+    "config": "^1.21.0",
     "cron": "^1.1.0",
     "oracledb": "^1.10.0",
     "request": "^2.73.0"

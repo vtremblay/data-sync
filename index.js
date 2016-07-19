@@ -1,8 +1,10 @@
 'use strict';
 
+const config = require('config');
+
 const CronJob = require('cron').CronJob;
-const ProductSynchronizeJob = require('./ProductSynchronizeJob');
+const ProductSynchronizationJob = require('./product/product-synchronization-job');
 
-const productSynchronizeJob = new ProductSynchronizeJob();
+const productSynchronizationJob = new ProductSynchronizationJob(config.get('product'));
 
-new CronJob('* * * * * *', productSynchronizeJob.execute, null, true, 'America/Los_Angeles');
+new CronJob('* * * * * *', () => productSynchronizationJob.execute(), null, true, 'America/Los_Angeles');
